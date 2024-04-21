@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>');
+  res.send('<h1>Hello World! I´m testing Docker Compose</h1>');
 });
 
 io.on('connection', (socket) => {
